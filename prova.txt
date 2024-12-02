@@ -11,6 +11,7 @@ class Carro:
         carros = []
 
         while True:
+            print("Codigo feito por Eduardo Marques e Pedro Henrique Pascon")
             print("\n Por Favor, insira as informações do seu carro:")
 
             marca = input("Digitge a marca do carro:")
