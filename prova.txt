@@ -1,0 +1,30 @@
+class Carro:
+    def _init_(self, marca, modelo, ano):
+        self.marca = marca
+        self.modelo = modelo
+        self.ano = ano
+
+    def detalhes(self):
+        return f"{self.ano} {self.marca} {self.modelo}"
+    
+    def main():
+        carros = []
+
+        while True:
+            print("\n Por Favor, insira as informações do seu carro:")
+
+            marca = input("Digitge a marca do carro:")
+            modelo = input("Digite o modelo do carro:")
+            ano = input("Digite o ano do carro: ")
+
+            carro = Carro (marca, modelo, ano)
+            carros.append(carro)
+
+            print(f"legal! o seu carro é um {carro.detalhes()}.")
+
+            continuar = input("\n Desejo adicionar outro carro? s/n: ").lower()
+
+            if continuar != 's':
+                break
+
+            print("\n carros cadastrados:")
